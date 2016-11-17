@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Motodynasty theme.
+
+motodynasty.settings:
+  type: theme_settings
+  label: 'Motodynasty settings'

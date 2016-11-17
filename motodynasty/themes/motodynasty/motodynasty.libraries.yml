@@ -1,0 +1,14 @@
+global-styling:
+  css:
+    theme:
+      css/jquery-ui.css: {}
+      css/style.css: {}
+      css/themes.css: {}
+      css/user1.css: {}
+      css/user2.css: {}
+      css/superfish_menu.css: {}
+      css/tablet.css: {}
+      css/mobile.css: {}
+  js:
+    js/jquery-ui.js: {}
+    js/simple.js: {}

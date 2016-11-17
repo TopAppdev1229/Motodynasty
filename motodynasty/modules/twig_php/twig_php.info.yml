@@ -1,0 +1,10 @@
+name: 'Twig PHP Filter'
+type: module
+# core: 8.x
+description: "<strong>WARNING:</strong> Enables execution of PHP code in Twig template files."
+
+# Information added by Drupal.org packaging script on 2015-10-08
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'twig_php'
+datestamp: 1444331046

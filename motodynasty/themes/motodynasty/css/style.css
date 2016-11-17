@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Economica');
+@import url('https://fonts.googleapis.com/css?family=Asap|Play');
+
+body {
+    padding:0px;
+    margin:0px;
+    font-family: 'Economica', sans-serif;
+    color:#3b3b3b;
+    font-size:14px;
+    line-height:23px;
+}
+
+#toolbar-administration {
+	width: 100%;
+}
+
+#whole_header_area {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+}
+
+body.fixed_menu #whole_header_area #header_top_area {
+   position: fixed;
+   top: 0;
+}
+
+body.toolbar-fixed #whole_header_area,
+body.toolbar-fixed.fixed_menu #whole_header_area #header_top_area {
+    top: 80px;
+}
+
+body.fixed_menu .header_area .logo_area::before {
+  bottom: 0;
+  right: auto;
+  top: 0;
+}
+
+#whole_header_area .social_area {
+  margin: auto;
+  min-height: 25px;
+  padding: 0px 0px;
+  text-align: right;
+  width: 1130px;
+  z-index: 10;
+}
+
+#header_top_area {
+  background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+
+#whole_header_area #header_top_area .header_area {
+  max-width: 1130px;
+  padding: 0px 0px;
+  margin: auto;
+}
+
+#whole_header_area .social_area .region-header-social-area {
+   display: inline-block;
+   vertical-align: middle;
+}
+
+#whole_header_area .header_area .logo_area {
+  float: left;
+  padding-right: 80px;
+  position: relative;
+  transition: all 400ms ease 0s;
+  z-index: 3;
+}
+
+#whole_header_area .header_area .menu_area {
+	float: right;
+}
+
+#whole_latest_results {
+	width: 100%;
+    overflow: hidden;
+}
+
+#latest_result_area {
+	max-width: 100%;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+#team_and_trainers_area {
+	width: 100%;
+    overflow: hidden;
+}
+
+#team_and_trainers {
+	max-width: 1130px;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+#team_and_trainers .about_team_area {
+	width: 50%;
+    float: left;
+}
+
+#team_and_trainers .trainers_area {
+	width: 50%;
+    float: right;
+}
+
+#whole_support_area {
+	width: 100%;
+    overflow: hidden;
+}
+
+#support_area {
+	max-width: 1130px;
+    padding: 0px;
+    margin: 90px auto;
+    position: relative;
+    text-align: center;
+    background: url(../images/donate-bg.jpg) repeat scroll 0 0 / cover ;
+}
+
+#whole_next_match_area {
+	width: 100%;
+    overflow: hidden;
+}
+
+#next_match_area {
+	max-width: 1130px;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+#whole_our_news_area {
+	width: 100%;
+    overflow: hidden;
+}
+
+#our_news_area {
+	max-width: 1130px;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+#whole_gallery_area {
+	width: 100%;
+    overflow: hidden;
+}
+
+#awards_and_achievements_area {
+	width: 100%;
+    overflow: hidden;
+}
+
+#awards_and_achievements {
+	max-width: 1130px;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+#awards_and_achievements .our_awards_area {
+	width: 50%;
+    float: left;
+}
+
+#awards_and_achievements .achievements_area {
+	width: 50%;
+    float: right;
+}
+
+#whole_our_team {
+	width: 100%;
+    overflow: hidden;
+    background: url("../images/our-team-main-wrap-bg.jpg") no-repeat scroll 50% 100% / 100% 600px;
+}
+
+#our_team_area {
+	max-width: 1130px;
+    padding: 90px 0px 80px;
+    margin: auto;
+}
+
+#main_area {
+	width: 100%;
+    overflow: hidden;
+}
+
+#midcontent {
+	max-width: 1130px;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+#whole_shop_area {
+	width: 100%;
+    overflow: hidden;
+    padding: 85px 0 100px;
+    background: url("../images/shop-main-page-bg.jpg") no-repeat scroll 50% 100%;
+}
+
+#whole_video_area {
+	width: 100%;
+    overflow: hidden;
+    background: url(../images/last-video-bg.jpg) no-repeat scroll 50% 100%;
+    padding: 85px 0px 76px;
+}
+
+#video_area {
+	max-width: 1130px;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+/*** Footer
+  **
+  **/
+
+#footer_top_area {
+	width: 100%;
+    overflow: hidden;
+}
+
+#footer_top {
+	max-width: 1130px;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+#footer_top .footer_top_left {
+	width: 50%;
+    float: left;
+}
+
+#footer_top .footer_top_right {
+	width: 50%;
+    float: right;
+}
+
+#footer_bottom_area {
+	width: 100%;
+    overflow: hidden;
+    background: url(../images/bottom-wrapper-bg.jpg) repeat scroll 50% 50% / cover ;
+    padding: 90px 0px 65px;
+}
+
+#footer_bottom_top {
+	max-width: 1130px;
+    padding: 0px 0px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#footer_bottom_middle {
+	max-width: 1130px;
+    padding: 0px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#footer_bottom_last {
+	max-width: 1130px;
+    padding: 25px 0px 0px;
+    margin: 35px auto auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#footer_bottom_top .footer_logo {
+	width: 50%;
+    float: left;
+}
+
+#footer_bottom_top .footer_socail_link {
+	width: 50%;
+    float: right;
+}
+
+#footer_bottom_top .footer_top_content {
+	width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#footer_bottom_middle .footer_middle_left {
+	width: 48.5%;
+    float: left;
+}
+
+#footer_bottom_middle .footer_middle_right {
+	width: 48.5%;
+    float: right;
+}
+
+#footer_bottom_last .footer_menu {
+	width: 60%;
+    float: left;
+    padding-left: 30px;
+}
+
+#footer_bottom_last .footer_copyright {
+	width: 40%;
+    float: right;
+}
+
+/***
+  ** Pager
+  **/
+
+.pager-nav.text-center {
+  overflow: hidden;
+  width: 100%;
+}
+
+.pagination {
+  margin-top: 30px 0;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #251ec6;
+  border-color: #337ab7;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #251ec6;
+}

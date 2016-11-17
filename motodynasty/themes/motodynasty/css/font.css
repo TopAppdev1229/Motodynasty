@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Economica-BoldItalic';
+    src: url('font/Economica-BoldItalic.otf');
+     src: url('font/Economica-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    	 url('font/Economica-BoldItalic.woff') format('woff'),
+         url('font/Economica-BoldItalic.ttf') format('truetype'),
+         url('font/Economica-BoldItalic.svg#BrandonGrotesque-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Economica-Bold';
+    src: url('font/Economica-Bold.otf');
+    src: url('font/Economica-Bold.eot?#iefix') format('embedded-opentype'),
+    	 url('font/Economica-Bold.woff') format('woff'),
+         url('font/Economica-Bold.ttf') format('truetype'),
+         url('font/Economica-Bold.svg#BrandonGrotesque-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Economica-Italic';
+    src: url('font/Economica-Italic.otf');
+     src: url('font/Economica-Italic.eot?#iefix') format('embedded-opentype'),
+    	 url('font/Economica-Italic.woff') format('woff'),
+         url('font/Economica-Italic.ttf') format('truetype'),
+         url('font/Economica-Italic.svg#BrandonGrotesque-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Economica-Regular';
+    src: url('font/Economica-Regular.otf');
+    src: url('font/Economica-Regular.eot?#iefix') format('embedded-opentype'),
+    	 url('font/Economica-Regular.woff') format('woff'),
+         url('font/Economica-Regular.ttf') format('truetype'),
+         url('font/Economica-Regular.svg#BrandonGrotesque-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
