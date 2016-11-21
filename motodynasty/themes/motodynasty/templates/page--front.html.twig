@@ -57,20 +57,31 @@
  */
 #}
 
+
 <div id="whole_header_area">
-	<div class="social_area">{{ page.header_social_area }}</div>
+
+	<div class="social_area">
+    <div class="container">
+      {{ page.header_social_area }}
+    </div>
+  </div>
+  
 	<div id="header_top_area">
-		<div class="header_area">	
-			<div class="logo_area">
-				<a href="{{ path('<front>') }}" title="{{ 'Sport.ak'|t }}" rel="Sport.ak" class="site-branding__logo">
-				<img src="{{ base_path ~ directory }}/logo.png"/>
-				<span>Sport<em>.ak</em></span>
-				</a>
-			</div>
-			<div class="menu_area">{{ page.menu_area }}</div>
-		</div>
+    <div class="container">
+  		<div class="header_area">	
+  			<div class="logo_area">
+  				<a href="{{ path('<front>') }}" title="{{ 'Sport.ak'|t }}" rel="Sport.ak" class="site-branding__logo">
+  				<!--<img src="{{ base_path ~ directory }}/logo.png"/>-->
+  				<span>Moto <em> Dynasty</em></span>
+  				</a>
+  			</div>
+  			<div class="menu_area">{{ page.menu_area }}</div>
+  		</div>
+    </div>
 	</div>
+  
 </div>
+
 
 {% if page.slideshow_area %}
 <div id="slideshow_area">
@@ -78,20 +89,23 @@
 </div>
 {% endif %}
 
+
 {% if page.latest_results %}
 <div id="whole_latest_results">
 	<div id="latest_result_area">{{ page.latest_results }}</div>
 </div>
 {% endif %}
 
+
 {% if page.about_team or page.trainers %}
 <div id="team_and_trainers_area">
-	<div id="team_and_trainers">
-		<div class="about_team_area">{{ page.about_team }}</div>
-		<div class="trainers_area">{{ page.trainers }}</div>
+	<div id="team_and_trainers" class="container">
+		<div class="about_team_area col-md-6 col-sm-12 col-xs-12">{{ page.about_team }}</div>
+		<div class="trainers_area col-md-6 col-sm-12 col-xs-12">{{ page.trainers }}</div>
 	</div>
 </div>
 {% endif %}
+
 
 {% if page.support %}
 <div id="whole_support_area">
@@ -99,17 +113,20 @@
 </div>
 {% endif %}
 
+
 {% if page.next_match %}
 <div id="whole_next_match_area">
-    <div id="next_match_area">{{ page.next_match }}</div>
+    <div id="next_match_area" class="container">{{ page.next_match }}</div>
 </div>
 {% endif %}
 
+
 {% if page.our_news %}
 <div id="whole_our_news_area">
-    <div id="our_news_area">{{ page.our_news }}</div>
+    <div id="our_news_area" class="container">{{ page.our_news }}</div>
 </div>
 {% endif %}
+
 
 {% if page.gallery %}
 <div id="whole_gallery_area">
@@ -122,26 +139,27 @@
 			<section id="tab4" class="tab-content hide">{{ drupal_block('views_block__gallery_all_block_4') }}</section>
 			<section id="tab5" class="tab-content hide">{{ drupal_block('views_block__gallery_all_block_5') }}</section>
 			<section id="tab6" class="tab-content hide">{{ drupal_block('views_block__gallery_all_block_6') }}</section>
-      <section id="tab7" class="tab-content hide">{{ drupal_block('views_block__gallery_all_block_7') }}</section>
-      <section id="tab8" class="tab-content hide">{{ drupal_block('views_block__gallery_all_block_8') }}</section>
-      <section id="tab9" class="tab-content hide">{{ drupal_block('views_block__gallery_all_block_9') }}</section>
+			<section id="tab7" class="tab-content hide">{{ drupal_block('views_block__gallery_all_block_7') }}</section>
+			<section id="tab8" class="tab-content hide">{{ drupal_block('views_block__gallery_all_block_8') }}</section>
+			<section id="tab9" class="tab-content hide">{{ drupal_block('views_block__gallery_all_block_9') }}</section>
 		</div>
 	</div>
 </div>
 {% endif %}
 
+
 {% if page.our_awards or page.achievements %}
-<div id="awards_and_achievements_area">
-	<div id="awards_and_achievements">
-		<div class="our_awards_area">{{ page.our_awards }}</div>
-		<div class="achievements_area">{{ page.achievements }}</div>
+<div id="awards_and_achievements_area" >
+	<div id="awards_and_achievements" class="container">
+		<div class="our_awards_area col-md-6 col-sm-12 col-xs-12">{{ page.our_awards }}</div>
+		<div class="achievements_area col-md-6 col-sm-12 col-xs-12">{{ page.achievements }}</div>
 	</div>
 </div>
 {% endif %}
 
 {% if page.our_team %}
 <div id="whole_our_team">
-    <div id="our_team_area">{{ page.our_team }}</div>
+    <div id="our_team_area" class="container">{{ page.our_team }}</div>
 </div>
 {% endif %}
 
@@ -160,9 +178,9 @@
 {% endif %}
 
 {% if page.video %}
-<div id="whole_video_area">
+<!--<div id="whole_video_area">
     <div id="video_area">{{ page.video }}</div>
-</div>
+</div>-->
 {% endif %}
 
 <div id="footer_top_area">
@@ -173,17 +191,17 @@
 </div>
 
 <div id="footer_bottom_area">
-	<div id="footer_bottom_top">
-		<div class="footer_logo">{{ page.footer_logo }}</div>
-		<div class="footer_socail_link">{{ page.footer_socail }}</div>
-		<div class="footer_top_content">{{ page.footer_top_content }}</div>
+	<div id="footer_bottom_top" class="container">
+		<div class="footer_logo col-md-6 col-sm-6 col-xs-12">{{ page.footer_logo }}</div>
+		<div class="footer_socail_link col-md-6 col-sm-6 col-xs-12">{{ page.footer_socail }}</div>
+		<div class="footer_top_content col-md-12 col-sm-12 col-xs-12">{{ page.footer_top_content }}</div>
 	</div>
-	<div id="footer_bottom_middle">
-		<div class="footer_middle_left">{{ page.footer_middle_left }}</div>
-		<div class="footer_middle_right">{{ page.footer_middle_right }}</div>
+	<div id="footer_bottom_middle" class="container">
+		<div class="footer_middle_left col-md-6 col-sm-12 col-xs-12">{{ page.footer_middle_left }}</div>
+		<div class="footer_middle_right col-md-6 col-sm-12 col-xs-12">{{ page.footer_middle_right }}</div>
 	</div>
-	<div id="footer_bottom_last">
-		<div class="footer_menu">{{ page.footer_menu }}</div>
-		<div class="footer_copyright">{{ page.footer_copyright }}</div>
+	<div id="footer_bottom_last" class="container">
+		<div class="footer_menu col-md-6 col-sm-12 col-xs-12">{{ page.footer_menu }}</div>
+		<div class="footer_copyright col-md-6 col-sm-12 col-xs-12">{{ page.footer_copyright }}</div>
 	</div>
 </div>

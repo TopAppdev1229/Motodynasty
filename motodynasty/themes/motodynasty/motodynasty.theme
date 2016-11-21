@@ -10,3 +10,19 @@ function motodynasty_preprocess_html(&$variables) {
   $current_path = \Drupal::service('path.current')->getPath();
   $variables['current_path'] = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
 }
+/**
+ * Implements hook_css_alter().
+ */
+//function motodynasty_css_alter(&$css) {
+//  $fontawesome = '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+//  $css[$fontawesome] = array(
+//    'data' => $fontawesome,
+//    'type' => 'external',
+//    'every_page' => TRUE,
+//    'media' => 'all',
+//    'preprocess' => FALSE,
+//    'group' => CSS_AGGREGATE_THEME,
+//    'browsers' => array('IE' => 'gte IE 8'),
+//    'weight' => 1,
+//  );
+//}

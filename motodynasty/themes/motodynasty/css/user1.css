@@ -4,7 +4,7 @@
 #whole_our_news_area {
     background-image: url("../images/our-news-bg.jpg");
     background-position: left center;
-    background-size: 100% auto;
+    background-size: cover;
     padding: 100px 0;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .news_listing_for_front .news_image_box img{
-    width:282px;
+    width:292px;
     height:260px;
 }
 
@@ -43,7 +43,7 @@
     padding-bottom:30px;
 }
 .view-news-listing .view-header h2 span{
-    color:#00afd8;
+    color:#6730d3;
 }
 .view-news-listing .view-header .news_header_text {
   color: #a6a6a6;
@@ -80,7 +80,7 @@
 
 .news_listing_for_front .news_date_and_description_box .read_more a:hover,
 .news_listing_for_front .news_date_and_description_box .news_title a:hover{
-  color:#00afd8;
+  color:#6730d3;
 }
 .news_listing_for_front .news_date_and_description_box .short_description {
   width:100%;
@@ -114,7 +114,7 @@
   text-align: center;
 }
 .view-news-listing .view-footer a {
-  background: #00afd8 none repeat scroll 0 0;
+  background: #6730d3 none repeat scroll 0 0;
   color: #2d2525;
   display: inline-block;
   font-family: "Asap";
@@ -132,7 +132,7 @@
   background:#2d2f2f;
 }
 .view-news-listing .view-footer a::before {
-  border: 1px solid #00afd8;
+  border: 1px solid #6730d3;
   bottom: -3px;
   content: "";
   left: -3px;
@@ -168,7 +168,7 @@
   top: 0;
   transform: skew(-33deg);
   z-index: -1;
-  background: #00afd8;
+  background: #6730d3;
 }
 #block-aboutteamblock .field--name-body {
   padding-right: 250px;
@@ -188,7 +188,7 @@
   color:#fff;
 }
 #block-aboutteamblock .field--name-body a {
-  color: #00afd8;
+  color: #6730d3;
   display: inline-block;
   font-size: 12px;
   font-weight: bold;
@@ -255,39 +255,82 @@
   position: relative;
   width: 250px;
 }
-.view-trainers-listing .views_slideshow_controls_text_previous a{
-    width:35px;
-    height:33px;
-    font-size:0px;
-    display:block;
-    position: absolute;
-    z-index: 300;
-    left:180px;
-    background:url(../images/slideshow_prev.png) no-repeat top left;
-    outline:none;
-} 
-.view-trainers-listing .views_slideshow_controls_text_pause a{
-    display:none;
+.view-trainers-listing .views_slideshow_controls_text_pause a,
+.view-trainers-listing .views_slideshow_controls_text_pause{
+  display:none!important;
+}
+.view-trainers-listing .views_slideshow_controls_text{
+  display: inline-block;
+  overflow: hidden;
+  background: none #2d2525;
+  height: 33px;
+  width: 86px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 190px;
+}
+.view-trainers-listing .views_slideshow_controls_text a {
+  margin: 0;
+  height: 33px;
+  width: 35px;
+  line-height: 33px;
+  position: absolute;
+  z-index: 9;
+  display: block;
+  float: left;
+  text-indent: 999999px;
+}
+.view-trainers-listing .views_slideshow_controls_text_previous a {
+  left: 0;
+  color: #6730d3;
+  background: none #2d2525;
+  top: 0;
 }
 .view-trainers-listing .views_slideshow_controls_text_next a{
-    width:35px;
-    height:33px;
-    font-size:0;
-    display:block;
-    position: absolute;
-    z-index: 300;
-    right:0;
-    background: #00afd8 url(../images/slideshow_next.png) no-repeat top left;
-    outline:none;
+  left: 53px;
+  color: #2d2525;
+  background: none #6730d3;
+  top: 0;
+}
+.view-trainers-listing .views_slideshow_controls_text a:before{
+  font-family: FontAwesome;
+  font-size: 19px;
+  position: absolute;
+  left: 50%;
+  margin-left: -4px;
+  text-indent: 0;
+}
+.view-trainers-listing .views_slideshow_controls_text_previous a:before {
+  content: "\f104";
+}
+.view-trainers-listing .views_slideshow_controls_text_next a:before {
+  content: "\f105";
+}
+.view-trainers-listing .views_slideshow_controls_text_next a:after {
+  content: '';
+  width: 26px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -13px;
+  transform: skew(-33deg);
+  background: #6730d3;
+}
+.view-trainers-listing .views_slideshow_controls_text_previous a:hover:before, 
+.view-trainers-listing .views_slideshow_controls_text_next a:hover:before {
+  color: #fff;
 }
 .view-trainers-listing .views-field-field-image {
   margin-left: 260px;
   margin-top:64px;
-  border:1px solid #00afd8;
+  border:1px solid #6730d3;
 }
 
 .view-trainers-listing .views-field-title{
-  top: 248px;
+  top: 238px;
   color: #fff;
   font-size: 33px;
   line-height: 35px;
@@ -297,8 +340,8 @@
   text-transform: uppercase;
 }
 .view-trainers-listing .views-field-field-sub-title{
-  color: #00afd8;
-  top: 282px;
+  color: #6730d3;
+  top: 272px;
   width:180px;
   font-size: 33px;
   line-height: 35px;
@@ -352,7 +395,7 @@
   z-index: 1;
 }
 .va-latest-top::before {
-  border-color: #00afd8;
+  border-color: #6730d3;
   border-image: none;
   border-style: solid;
   border-width: 1px 1px 0;
@@ -373,7 +416,7 @@
   text-transform: uppercase;
 }
 .va-latest-top h3 span {
-  color: #00afd8;
+  color: #6730d3;
 }
 .va-latest-top .tournament {
   font-family: "Asap";
@@ -453,12 +496,12 @@
   text-transform: uppercase;
 }
 .va-latest-middle .table {
-  background: #00afd8;
+  background: #6730d3;
   font-size: 0;
   position: relative;
 }
 .va-latest-middle .table::before {
-  border: 1px solid #00afd8;
+  border: 1px solid #6730d3;
   bottom: -3px;
   content: "";
   left: -3px;
@@ -475,7 +518,7 @@
   width: 37%;
 }
 .va-latest-middle .table .left::before {
-  background: #00afd8;
+  background: #6730d3;
   border-radius: 50%;
   content: "vs";
   font-size: 16px;
@@ -491,7 +534,7 @@
 }
 .va-latest-middle .table .right {
   background: #2d2525;
-  color: #00afd8;
+  color: #6730d3;
   float: right;
   font-size: 33px;
   line-height: 70px;
@@ -532,7 +575,7 @@
   z-index: 0;
 }
 .va-latest-bottom::before {
-  border-color: #00afd8;
+  border-color: #6730d3;
   border-image: none;
   border-style: solid;
   border-width: 0 1px 1px;
@@ -555,9 +598,8 @@
   width: 66.666%;
 }
 .va-latest-bottom .text {
-  height: 110px;
   overflow: hidden;
-  padding-top: 20px;
+  margin-top: 20px;
   z-index: 1;
 }
 .va-latest-bottom .text p{
@@ -576,7 +618,7 @@
   position: relative;
 }
 .va-latest-bottom .read-more {
-  background: #00afd8;
+  background: #6730d3;
   color: #2d2525;
   display: inline-block;
   font-size: 12px;
@@ -588,7 +630,7 @@
   transition: all 400ms ease 0s;
 }
 .va-latest-bottom .read-more::before {
-  border: 1px solid #00afd8;
+  border: 1px solid #6730d3;
   bottom: -3px;
   content: "";
   left: -3px;
@@ -599,6 +641,7 @@
 
 /*******************************************NEXT MATCH SECTION********************************************/
 
+#block-views-block-next-race-block-1,
 #block-nextmatchblock {
   width: 50%;
   float: left;
@@ -620,7 +663,7 @@
   text-transform: uppercase;
 }
 .main-next-match-title::before {
-  background: #00afd8 none repeat scroll 0 0;
+  background: #6730d3 none repeat scroll 0 0;
   content: "";
   height: 1px;
   left: 0;
@@ -636,7 +679,7 @@
   position: relative;
 }
 .main-next-match-title span {
-  color: #00afd8;
+  color: #6730d3;
 }
 .match-list-single .match-list-item {
   text-align: center;
@@ -663,7 +706,7 @@
   text-transform: uppercase;
 }
 .match-list-single .match-list-item .versus {
-  background: #00afd8;
+  background: #6730d3;
   color: #2d2525;
   font-size: 16px;
   line-height: 30px;
@@ -705,7 +748,7 @@
   text-transform: uppercase;
 }
 .match-list-item .counter_container .countdown_separator {
-  color: #00afd8;
+  color: #6730d3;
   font-size: 23px;
   padding: 0 13px;
 }
@@ -724,13 +767,16 @@
 }
 .counter_container {
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 14px;
 }
 
 /***************************************OUR AWARD SECTION******************************************************/
 
 #awards_and_achievements_area{
-    background:url(../images/tt-achievments-wrap.jpg) repeat scroll 55% 50% / cover ;
+  background-image: url("../images/tt-achievments-wrap.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .view-our-awards .view-header h2{
   color: #2d2525;
@@ -741,7 +787,7 @@
   padding-left:18%;
 }
 .view-our-awards .view-header h2 span{
-  color:#00afd8;
+  color:#6730d3;
 }
 .view-our-awards{
   width:100%;
@@ -767,32 +813,69 @@
   position: absolute;
   width: 250px;
 }
-.view-our-awards .views_slideshow_controls_text_previous a{
-    width:35px;
-    height:33px;
-    font-size:0px;
-    display:block;
+
+.view-our-awards .views_slideshow_controls_text {
+    margin-right: 20px;
+    display: inline-block;
+    background: #2d2525;
+    overflow: hidden;
     position: absolute;
-    z-index: 300;
-    left:180px;
-    background:url(../images/slideshow_prev.png) no-repeat top left;
-    outline:none;
-} 
+    right: 14px;
+    bottom: 0;
+    height: 33px;
+}
+.view-our-awards .views_slideshow_controls_text a{
+    margin: 0;
+    height: 33px;
+    width: 35px;
+    line-height: 33px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    float: left;
+    left: 0;
+    top: 0;
+    right: 0;
+    color: #6730d3;
+}
+.view-our-awards .views_slideshow_controls_text a:hover{
+  color: #fff;
+}
+.view-our-awards .views_slideshow_controls_text a:before {
+    left: 50%;
+    margin-left: -4px;
+}
+.view-our-awards .views_slideshow_controls_text_previous a:before {
+    content: "\f104";
+    font-family: FontAwesome;
+    font-size: 19px;
+    position: absolute;
+}
 .view-our-awards .views_slideshow_controls_text_pause a{
     display:none;
 }
 .view-our-awards .views_slideshow_controls_text_next a{
-    width:35px;
-    height:33px;
-    font-size:0;
-    display:block;
-    position: absolute;
-    z-index: 300;
-    right:0;
-    background: #00afd8 url(../images/slideshow_next.png) no-repeat top left;
-    outline:none;
+   color: #2d2525;
 }
-
+.view-our-awards .views_slideshow_controls_text_next a:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-size: 19px;
+    position: absolute;
+   
+}
+.view-our-awards .views_slideshow_controls_text_next a:after {
+    content: '';
+    width: 400%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: skew(-33deg);
+    background: #6730d3;
+}
 #block-views-block-achievements-listing-block-1 h2.block-title {
   color: #ffffff;
   font-size: 38px;
@@ -822,7 +905,7 @@
   float: right;
 }
 .view-achievements-listing .achievement_right_box .achievement_title_text{
-  color: #00afd8;
+  color: #6730d3;
   font-size: 38px;
   padding: 10px 0 0;
 }
@@ -833,3 +916,163 @@
   padding: 20px 0 0;
   text-transform: uppercase;
 }
+#whole_our_team {
+  width: 100%;
+    overflow: hidden;
+    background: url("../images/our-team-main-wrap-bg.jpg") no-repeat scroll 50% 100% / 100% 600px;
+}
+#footer_bottom_area {
+  width: 100%;
+    overflow: hidden;
+    background: url(../images/bottom-wrapper-bg.jpg) repeat scroll 50% 50% / cover;
+    padding: 90px 0px 65px;
+}
+#footer_bottom_last {
+    padding: 25px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 0px 0px;
+    margin: 35px auto 0;
+    position: relative;
+    overflow: hidden;
+}
+#whole_shop_area{
+   padding-top: 90px;
+}
+
+/**********/
+
+
+
+@media (max-width: 767px) {
+  /*#block-mainnavigation .sf-accordion-toggle a{
+    background-color: transparent;
+    background-image: url("../images/menu-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30px 20px;
+    display: block;
+    height: 30px;
+    line-height: 70px;
+    margin: 20px 0;
+    width: 30px;
+  }*/
+  
+  #block-mainnavigation .sf-accordion-toggle a{
+    margin: 20px 0;
+    height: 30px;
+    width: 35px;
+    line-height: 33px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    float: left;
+    left: 0;
+    top: 0;
+    right: 0;
+    color: #6730d3;
+  }
+  #block-mainnavigation .sf-accordion-toggle a:before {
+    content: "\f0c9";
+    font-family: FontAwesome;
+    font-size: 35px;
+    left: 0;
+    margin-left: 0;
+    position: absolute;
+  }
+  .achievements_area .views-view-grid .views-col {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    max-width: 290px;
+    overflow: hidden;
+    width: 100% !important;
+  }
+  .achievements_area .views-view-grid .views-row {
+    margin-bottom: 0!important;
+  }
+  .view-achievements-listing {
+    margin-left: 0!important;
+  }
+  #footer_bottom_top .footer_socail_link {
+    text-align: center!important;
+  }
+  #footer_bottom_top .footer_socail_link ul li {
+    margin: 0 10px!important;
+  }
+  .footer-logo{
+    text-align: center;
+  }
+  #footer_bottom_middle .footer_middle_right .simplenews-subscriber-form .form-group{
+    clear: both;
+    display: block;
+    float: none;
+    margin: 10px auto;
+    max-width: 300px;
+    text-align: center;
+    width: 287px !important;
+  }
+  #footer_bottom_middle .footer_middle_right .simplenews-subscriber-form .form-item-message.form-group{
+    max-width: 100%;
+  }
+  #footer_bottom_middle .footer_middle_right .simplenews-subscriber-form .form-actions::before{
+    left: -2px!important;
+    right: -1px!important;
+    transform: none!important;
+  }
+  #footer_bottom_middle .footer_middle_right .simplenews-subscriber-form .form-actions .submit_wrapper::before{
+    left: 0px!important;
+    transform: none!important;
+  }
+  #footer_bottom_middle .footer_middle_right .simplenews-subscriber-form .form-type-email::before{
+    left: -1px!important;
+    right: -1px!important;
+    transform: none!important;
+  }
+}/*end max-width 767*/
+
+@media (max-width: 991px) {
+  #awards_and_achievements.container{
+    width: 100%!important;
+  }
+  .view-our-awards .view-header h2{
+    padding: 40px 0 0!important;
+  }
+  .view-our-awards .views-slideshow-controls-top{
+    margin-left: 0!important;
+    right: 0!important;
+  }
+  .view-our-awards .views_slideshow_cycle_slide,
+  .view-our-awards .views_slideshow_cycle_teaser_section{
+    width: 100%!important;
+  }
+  .view-our-awards .views-row{
+    margin: 0 auto!important;
+    text-align: center!important;
+    width: 50%!important;
+  }
+  .view-our-awards .views-row img{
+    margin: 0 auto!important;
+  }
+  .achievements_area{
+    background-color: #2d2525;
+  }
+  .achievements_area #block-views-block-achievements-listing-block-1 h2.block-title{
+    margin-left: 0!important;
+  }
+  #awards_and_achievements_area{
+    background: transparent none repeat scroll 0 0!important;
+  }
+  #footer_bottom_last .footer_copyright{
+    text-align: center!important;
+    margin-top: 20px;
+  }
+  .footer_menu{
+    text-align: center!important;
+  }
+  .footer_middle_right{
+    margin-top: 20px;
+  }
+  .view-trainers-listing .views_slideshow_controls_text{
+    left: 0!important;
+  }
+}/*end max-width 991*/

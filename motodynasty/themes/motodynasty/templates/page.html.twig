@@ -58,19 +58,34 @@
 #}
 
 <div id="whole_header_area">
-	<div class="social_area">{{ page.header_social_area }}</div>
+
+	<div class="social_area">
+    <div class="container">
+      {{ page.header_social_area }}
+    </div>
+  </div>
+  
 	<div id="header_top_area">
-		<div class="header_area">	
-			<div class="logo_area">
-				<a href="{{ path('<front>') }}" title="{{ 'Sport.ak'|t }}" rel="Sport.ak" class="site-branding__logo">
-				<img src="{{ base_path ~ directory }}/logo.png"/>
-				<span>Sport<em>.ak</em></span>
-				</a>
-			</div>
-			<div class="menu_area">{{ page.menu_area }}</div>
-		</div>
+    <div class="container">
+  		<div class="header_area">	
+  			<div class="logo_area">
+  				<a href="{{ path('<front>') }}" title="{{ 'Sport.ak'|t }}" rel="Sport.ak" class="site-branding__logo">
+  				<!--<img src="{{ base_path ~ directory }}/logo.png"/>-->
+  				<span>Moto <em> Dynasty</em></span>
+  				</a>
+  			</div>
+  			<div class="menu_area">{{ page.menu_area }}</div>
+  		</div>
+    </div>
 	</div>
+  
 </div>
+
+{% if page.slideshow_area %}
+<div id="slideshow_area">
+    <div class="slideshow_area">{{ page.slideshow_area }}</div>
+</div>
+{% endif %}
 
 <div id="main_area">            
 	<div id="midcontent" class="column main-content">
@@ -78,6 +93,7 @@
         <div class="content_area">{{ page.content }}</div>
 	</div>
 </div>
+
 
 <div id="footer_top_area">
 	<div id="footer_top">
@@ -87,17 +103,17 @@
 </div>
 
 <div id="footer_bottom_area">
-	<div id="footer_bottom_top">
-		<div class="footer_logo">{{ page.footer_logo }}</div>
-		<div class="footer_socail_link">{{ page.footer_socail }}</div>
-		<div class="footer_top_content">{{ page.footer_top_content }}</div>
+	<div id="footer_bottom_top" class="container">
+		<div class="footer_logo col-md-6 col-sm-6 col-xs-12">{{ page.footer_logo }}</div>
+		<div class="footer_socail_link col-md-6 col-sm-6 col-xs-12">{{ page.footer_socail }}</div>
+		<div class="footer_top_content col-md-12 col-sm-12 col-xs-12">{{ page.footer_top_content }}</div>
 	</div>
-	<div id="footer_bottom_middle">
-		<div class="footer_middle_left">{{ page.footer_middle_left }}</div>
-		<div class="footer_middle_right">{{ page.footer_middle_right }}</div>
+	<div id="footer_bottom_middle" class="container">
+		<div class="footer_middle_left col-md-6 col-sm-12 col-xs-12">{{ page.footer_middle_left }}</div>
+		<div class="footer_middle_right col-md-6 col-sm-12 col-xs-12">{{ page.footer_middle_right }}</div>
 	</div>
-	<div id="footer_bottom_last">
-		<div class="footer_menu">{{ page.footer_menu }}</div>
-		<div class="footer_copyright">{{ page.footer_copyright }}</div>
+	<div id="footer_bottom_last" class="container">
+		<div class="footer_menu col-md-6 col-sm-12 col-xs-12">{{ page.footer_menu }}</div>
+		<div class="footer_copyright col-md-6 col-sm-12 col-xs-12">{{ page.footer_copyright }}</div>
 	</div>
 </div>

@@ -9,6 +9,9 @@ Drupal.behaviors.simple = {
 		i++;
 	});*/
 	
+    $('.view-our-awards .views_slideshow_controls_text a').empty();
+    $('.view-last-match .views_slideshow_controls_text a').empty();
+    
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 30){
 			$('body').addClass("fixed_menu");

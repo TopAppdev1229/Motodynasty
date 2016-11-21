@@ -10,7 +10,7 @@
 }
 
 .menu_area ul.menu li::before {
-  background: #00afd8 none repeat scroll 0 0;
+  background: #6730d3 none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 3px;
@@ -33,7 +33,7 @@
 .menu_area ul.menu li.active-trail a,
 .menu_area ul.menu li a:hover {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #00afd8;
+  color: #6730d3;
 }
 
 .menu_area ul.menu li:hover {
@@ -59,7 +59,7 @@
 }
 
 .menu_area ul.menu li ul::before {
-  background: #00afd8 none repeat scroll 0 0;
+  background: #6730d3 none repeat scroll 0 0;
   content: "";
   height: 3px;
   left: 0;
@@ -81,7 +81,7 @@
 }
 
 .menu_area ul.menu li ul li a::before {
-  background: #00afd8 none repeat scroll 0 0;
+  background: #6730d3 none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 2px;
@@ -92,7 +92,7 @@
 }
 
 .menu_area ul.menu li ul li a::after {
-  border-bottom: 8px solid #00afd8;
+  border-bottom: 8px solid #6730d3;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   bottom: 2px;

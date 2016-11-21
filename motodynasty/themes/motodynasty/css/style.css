@@ -42,19 +42,17 @@ body.fixed_menu .header_area .logo_area::before {
   min-height: 25px;
   padding: 0px 0px;
   text-align: right;
-  width: 1130px;
   z-index: 10;
 }
 
 #header_top_area {
-  background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
   position: absolute;
   top: 30px;
   width: 100%;
 }
 
 #whole_header_area #header_top_area .header_area {
-  max-width: 1130px;
   padding: 0px 0px;
   margin: auto;
 }
@@ -67,7 +65,7 @@ body.fixed_menu .header_area .logo_area::before {
 #whole_header_area .header_area .logo_area {
   float: left;
   padding-right: 80px;
-  position: relative;
+  position: absolute;
   transition: all 400ms ease 0s;
   z-index: 3;
 }
@@ -93,19 +91,16 @@ body.fixed_menu .header_area .logo_area::before {
 }
 
 #team_and_trainers {
-	max-width: 1130px;
-    padding: 0px 0px;
-    margin: auto;
+  padding: 0px 0px;
+  margin: auto;
 }
 
 #team_and_trainers .about_team_area {
-	width: 50%;
-    float: left;
+
 }
 
 #team_and_trainers .trainers_area {
-	width: 50%;
-    float: right;
+
 }
 
 #whole_support_area {
@@ -124,13 +119,12 @@ body.fixed_menu .header_area .logo_area::before {
 
 #whole_next_match_area {
 	width: 100%;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #next_match_area {
-	max-width: 1130px;
-    padding: 0px 0px;
-    margin: auto;
+  padding: 0px 0px;
+  margin: auto;
 }
 
 #whole_our_news_area {
@@ -139,9 +133,8 @@ body.fixed_menu .header_area .logo_area::before {
 }
 
 #our_news_area {
-	max-width: 1130px;
-    padding: 0px 0px;
-    margin: auto;
+  padding: 0px 0px;
+  margin: auto;
 }
 
 #whole_gallery_area {
@@ -160,15 +153,6 @@ body.fixed_menu .header_area .logo_area::before {
     margin: auto;
 }
 
-#awards_and_achievements .our_awards_area {
-	width: 50%;
-    float: left;
-}
-
-#awards_and_achievements .achievements_area {
-	width: 50%;
-    float: right;
-}
 
 #whole_our_team {
 	width: 100%;
@@ -246,35 +230,32 @@ body.fixed_menu .header_area .logo_area::before {
 }
 
 #footer_bottom_top {
-	max-width: 1130px;
     padding: 0px 0px;
     margin: auto;
     overflow: hidden;
 }
 
 #footer_bottom_middle {
-	max-width: 1130px;
     padding: 0px;
     margin: auto;
     overflow: hidden;
 }
 
 #footer_bottom_last {
-	max-width: 1130px;
+    padding: 25px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 25px 0px 0px;
-    margin: 35px auto auto;
+    margin: 35px 0 0;
     position: relative;
     overflow: hidden;
 }
 
 #footer_bottom_top .footer_logo {
-	width: 50%;
-    float: left;
+
 }
 
 #footer_bottom_top .footer_socail_link {
-	width: 50%;
-    float: right;
+
 }
 
 #footer_bottom_top .footer_top_content {
@@ -285,24 +266,19 @@ body.fixed_menu .header_area .logo_area::before {
 }
 
 #footer_bottom_middle .footer_middle_left {
-	width: 48.5%;
-    float: left;
+
 }
 
 #footer_bottom_middle .footer_middle_right {
-	width: 48.5%;
-    float: right;
+
 }
 
 #footer_bottom_last .footer_menu {
-	width: 60%;
-    float: left;
-    padding-left: 30px;
+
 }
 
 #footer_bottom_last .footer_copyright {
-	width: 40%;
-    float: right;
+
 }
 
 /***
@@ -331,4 +307,377 @@ body.fixed_menu .header_area .logo_area::before {
 .pagination > li > a,
 .pagination > li > span {
   color: #251ec6;
+}
+/**********/
+
+.uk-team-left .uk-vertical-align-middle{
+  float: right;
+  padding-right: 30px;
+}
+.uk-team-right .uk-vertical-align-middle{
+  float: left;
+  padding-left: 30px;
+}
+.view-last-match .views-field-field-image img,
+.view-next-race .logo img{
+  width: 30px;
+}
+.user-logged-in #block-simplenewssubscription #edit-actions{
+  display: block;
+  clear: both;
+}
+.view-next-race .field-timer-jquery-countdown {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.view-next-race .field-timer-jquery-countdown .countdown-section{
+  margin: 15px;
+}
+.view-next-race .field-timer-jquery-countdown .countdown-section .countdown-amount {
+  color: #2d2525;
+  margin-right: 7px;
+}
+.view-next-race .field-timer-jquery-countdown .countdown-section .countdown-period {
+  color: #a6a6a6;
+}
+
+
+/**********/
+
+
+@media (max-width: 767px) {
+  .social_area{
+    display: none!important;
+    opacity: 0!important;
+  }
+  #block-mainnavigation .sf-accordion-toggle a span{
+    display: none;
+  }
+  #superfish-main-accordion{
+    background-color: #333333;
+    left: 0!important;
+    position: absolute!important;
+    top: 100% !important;
+    width: 100%!important;
+  }
+  .menu_area ul.menu li a{
+    line-height: 1.7!important;
+  }
+  #slideshow_area{
+    position: relative;
+    z-index: 0;
+  }
+  #whole_header_area .header_area .logo_area{
+    padding-right: 60px!important;
+  }
+  #whole_header_area .header_area .logo_area span{
+    padding-left: 0!important;
+  }
+  .slideshow_area .view-slideshow .slideshow_content{
+    padding: 0 40px;
+    top: 120px!important;
+    width: 100%;
+  }
+  .slideshow_area .view-slideshow .slideshow_content .title a span{
+    font-size: 42px!important;
+  }
+  .uk-container{
+    padding: 0 15px!important;
+  }
+  .va-latest-wrap{
+    padding: 30px 0 0!important;
+  }
+  .va-latest-top::before{
+    border: medium none!important;
+  }
+  .va-latest-bottom::before{
+    border: medium none!important;
+  }
+  .va-latest-bottom .btn-wrap{
+    padding: 5px 15px!important;
+  }
+  .va-latest-middle{
+    height: auto!important;
+  }
+  .uk-container .uk-width-3-12 {
+    text-align: center;
+    width: 100%;
+  }
+  .uk-container .uk-team-right .uk-vertical-align-middle,
+  .uk-container .uk-team-left .uk-vertical-align-middle{
+    float: none;
+    padding: 0;
+  }
+  .uk-container .uk-width-2-12{
+    margin: 0 auto;
+    max-width: 200px;
+    text-align: center;
+    width: 100%;
+  }
+  .uk-container .va-latest-bottom .text{
+ 
+  }
+  #support_area .donate-inner{
+    padding: 55px 15px 50px!important;
+  }
+  #support_area .donate-inner::before, 
+  #support_area .donate-inner::after{
+    border: none!important;
+  }
+  #support_area .teamdonate-form .radio-wrap{
+    width: 100%!important;
+  }
+  .view-next-match .views-field-field-first-team-name, 
+  .view-next-match .views-field-field-second-team-name,
+  .view-next-match .views-field-field-match-date{
+    padding: 0 5px!important;
+  }
+  .view-next-match .views-field-field-first-team-name, 
+  .view-next-match .views-field-field-second-team-name{
+    font-size: 12px!important;
+  }
+  .view-next-match .views-field-field-match-date{
+    font-size: 10px!important;
+  }
+  .view-next-match .views-field-field-image {
+    padding: 0 0 0 5px!important;
+  }
+  .view-next-match .views-field-field-second-team-logo {
+    padding: 0 5px 0 0;
+  }
+  .news_listing_for_front{
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .news_listing_for_front .news_image_box{
+    float: none!important;
+    margin: 0 auto;
+    width: 100%!important;
+  }
+  .news_listing_for_front .news_image_box img{
+    margin: 0 auto;
+    max-width: 292px;
+    text-align: center;
+  }
+  .news_listing_for_front .news_date_and_description_box{
+    float: none!important;
+    margin: 0 auto;
+    max-width: 292px;
+    width: 100%!important;
+  }
+  .news_listing_for_front .news_date_and_description_box::before{
+    left: 45% !important;
+    margin-left: 0 !important;
+    margin-top: -15px;
+    top: 0 !important;
+  }
+  .view-news-listing .views-col{
+    width: 100%!important;
+  }
+  .view-gallery-all .views-col{
+    width: 100%!important;
+  }
+  #gallery_tabs .quick_tab{
+    padding: 10px 15px;
+  }
+  #gallery_tabs .quick_tab > li > a{
+    margin-right: 15px!important;
+    padding: 10px 0!important;
+  }
+  .gallery_header_text.container .gallery_title{
+    background-color: #6730d3;
+    margin: 0;
+    padding: 5px 0 !important;
+    text-align: center;
+    width: 100%!important;
+  }
+  .gallery_header_text .gallery_title::before{
+    right: -15px!important;
+    left: -15px!important;
+    transform: none!important;
+  }
+  .gallery_header_text .gallery_text{
+    overflow: hidden;
+    padding: 15px 0 !important;
+    width: 100%!important;
+  }
+  .va-latest-bottom .read-more{
+    margin-bottom: 20px;
+  }
+  #team_and_trainers_area{
+    margin-top: 20px!important;
+  }
+  #support_area{
+    margin: 1px auto!important;
+  }
+  #whole_next_match_area{
+    padding: 0!important;
+  }
+  .view-next-race .field-timer-jquery-countdown {
+    font-size: 20px;
+  }
+  .view-next-race .field-timer-jquery-countdown .countdown-section{
+    margin: 5px;
+  }
+  .view-next-race .field-timer-jquery-countdown .countdown-section .countdown-amount {
+    color: #2d2525;
+    margin-right: 5px;
+  }
+}/*end max-width 767*/
+
+@media (max-width: 991px) {
+  #block-aboutteamblock .field--name-body::before{
+    height: 100%!important;
+    transform: none!important;
+    right: 0!important;
+  }
+  #block-aboutteamblock .field--name-body {
+    width: 100%!important;
+  }
+  #team_and_trainers_area .trainers_area{
+    background-color: rgba(45, 37, 37, 0.9);
+  }
+  #block-views-block-trainers-listing-block-1::before{
+    background: transparent none repeat scroll 0 0!important;
+  }
+  .view-trainers-listing .views-field-field-image{
+    margin-left: 0!important;
+  }
+  .view-trainers-listing .views-slideshow-controls-top{
+    margin-left: 0!important;
+  }
+  .view-trainers-listing .views-field-field-sub-title{
+    top: 260px!important;
+  }
+  .view-trainers-listing .views-field-title{
+    top: 230px!important;
+  }
+  #block-views-block-trainers-listing-block-1{
+    margin: 0 auto;
+    padding: 0!important;
+    width: 270px;
+  }
+  #block-views-block-next-race-block-1,
+  #block-nextmatchblock, 
+  #block-views-block-next-match-block-1-2{
+    width: 100%!important;
+  }
+  .gallery_header_text .gallery_title{
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
+    width: 100%!important;
+  }
+  .view-our-awards .view-header h2{
+    padding: 40px 0 0!important;
+  }
+  #block-aboutteamblock{
+    padding: 40px 0 90px!important;
+  }
+  #block-aboutteamblock .field--name-body a{
+    margin-bottom: 20px!important;
+  }
+  #team_and_trainers.container{
+    width: 100%!important;
+  }
+  #block-views-block-trainers-listing-block-1 h2.block-title{
+    padding-top: 50px!important;
+  }
+}/*end max-width 991*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu_area ul.menu li a{
+    font-size: 14px!important;
+    padding: 0 10px!important;
+  }
+  #support_area .donate-inner::before{
+    width: 18%!important;
+  }
+  #support_area .donate-inner::after{
+    width: 18%!important;
+  }
+  .view-news-listing .views-row{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .view-news-listing .views-row .views-col{
+    float: none;
+    margin: 0 auto;
+    max-width: 584px !important;
+    width: 100% !important;
+  }
+  .view-news-listing .views-row .views-col.col-1{
+    margin-bottom: 30px!important;
+  }
+  #gallery_tabs .quick_tab{
+    padding: 0 15px;
+  }
+  #gallery_tabs .quick_tab > li > a{
+    margin-right: 15px!important;
+  }
+  .gallery_photo a.colorbox img{
+    height: 180px!important;
+  }
+  .slideshow_area .view-slideshow .slideshow_content{
+    top: 35%!important;
+  }
+  #whole_header_area .header_area .logo_area{
+    padding-right: 70px !important;
+  }
+  .header_area .logo_area span{
+    padding-left: 0!important;
+  }
+  #whole_support_area{
+    margin: 0 30px!important;
+    width: auto!important;
+  }
+}/*end min-width: 768px max-width 991*/
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu_area ul.menu li a{
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  #block-aboutteamblock .field--name-body{
+    width: 100%!important;
+  }
+  .view-trainers-listing .views-slideshow-controls-top{
+    margin-left: 0!important;
+  }
+  .view-trainers-listing .views-field-field-image{
+    margin-left: 180px!important;
+  }
+  .view-trainers-listing .views-field-field-sub-title,
+  .view-trainers-listing .views-field-title{
+    width: 126px!important;
+    left: 50px!important;
+  }
+  .view-trainers-listing .views-field-title{
+    top: 225px!important;
+  }
+  .view-trainers-listing .views-field-field-sub-title{
+    top: 255px!important;
+  }
+  #gallery_tabs .quick_tab{
+    padding: 0 25px;
+  }
+  #gallery_tabs .quick_tab > li > a{
+    margin-right: 25px!important;
+  }
+  .gallery_photo a.colorbox img{
+    height: 220px!important;
+  }
+  #whole_support_area{
+    margin: 0 30px!important;
+    width: auto!important;
+  }
+  #footer_bottom_middle .footer_middle_right .simplenews-subscriber-form .form-item-message{
+     width: 60%!important;
+  }
+}/*end min-width: 992px max-width 1199*/
+
+@media (min-width: 1200) {
+  
 }
